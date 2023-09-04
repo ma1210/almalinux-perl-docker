@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  apache-perl:
+    build:
+      context: ./docker
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
